@@ -8,9 +8,9 @@ namespace MyFortnite
 {
     class FNPlayer
     {
-        public string equipedWeapon;
-        public double hitPoints;
-        public double shield;
+        private string equipedWeapon;
+        private double hitPoints;
+        private double shield;
 
         public FNPlayer()
         {
@@ -39,6 +39,16 @@ namespace MyFortnite
         void EquipWeapon()
         {
 
+        }
+
+        public double GetShield()
+        {
+            return shield;
+        }
+
+        public void SetShield(double shield)
+        {
+            this.shield = shield;
         }
 
         public void TakeDamage(double damage)
